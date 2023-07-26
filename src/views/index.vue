@@ -82,7 +82,7 @@
         </div>
       </div>
     </div>
-    <Title title="Start Free today" class="px-7" style="padding: 0px 400px !important;"/>
+    <Title title="Start Free today" class="px-7"/>
     <div class="container--input mb-8" >
       <div class="flex flex-column mb-5">
         <label for="username" class="input-lable">Username:</label>
