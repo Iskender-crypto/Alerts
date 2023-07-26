@@ -1,0 +1,58 @@
+.gradient-container{
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: #030f18;
+  z-index: -2;
+  top: 0;
+  left: 0;
+  color: #fdfdfd;
+
+  .circle-1 {
+    width: 600px;
+    height: 600px;
+    border-radius: 1083px;
+    background: #0A72D4;
+    filter: blur(180px);
+    position: absolute;
+    top: -70%;
+    left: 10%;
+    animation: backAnimation-1 34s infinite;
+  }
+  .circle-2 {
+    width: 600px;
+    height: 600px;
+    border-radius: 1083px;
+    background: #0A72D4;
+    filter: blur(180px);
+    position: absolute;
+    top: 90%;
+    left: 70%;
+    animation: backAnimation-2 37s infinite;
+    /* Добавьте другие стили для элементов с кругами */
+  }
+}
+
+@keyframes backAnimation-1 {
+  0%{
+    transform: translate(0,0);
+  }
+  50%{
+    transform: translate(-120%,90%);
+  }
+  100%{
+    transform: translate(0,0);
+  }
+}
+@keyframes backAnimation-2 {
+  0%{
+    transform: translate(0,0);
+  }
+  50%{
+    transform: translate(120%,-90%);
+  }
+  100%{
+    transform: translate(0,0);
+  }
+}

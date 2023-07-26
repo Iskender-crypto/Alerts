@@ -1,0 +1,60 @@
+.app{
+  padding: 30px;
+  position: relative;
+  z-index: 1;
+  @media screen and (max-width: 576px){
+    padding: 15px;
+  }
+  .logo{
+    color: var(--white, #FFF);
+    font-family: Inter;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 100%; /* 48px */
+    @media screen and (max-width: 576px){
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 900;
+    }
+  }
+  .burger-ellipse{
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(315deg, rgba(51, 123, 190, 0.20) 0%, rgba(0, 0, 0, 0.00) 100%, rgba(51, 123, 190, 0.00) 100%), rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    transition: 0.8s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    &:hover{
+      background: linear-gradient(315deg, rgba(43, 68, 100, 0.2) 0%, rgba(0, 0, 0, 0.00) 100%, rgba(51, 123, 190, 0.00) 100%), rgba(255, 237, 237, 0.11);
+    }
+
+    @media screen and (max-width: 576px){
+      background: transparent;
+    }
+  }
+
+  .burger{
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    width: 30px;
+  }
+
+  .burger-item{
+    background-color: white;
+    height: 2px;
+  }
+
+  .burger-item:nth-child(1){
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .burger-item:nth-child(2){
+    width:60%;
+  }
+
+}

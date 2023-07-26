@@ -1,0 +1,39 @@
+.input{
+  outline: none;
+  border: none;
+  border-radius: 16px;
+  background: linear-gradient(315deg, rgba(51, 123, 190, 0.20) 0%, rgba(51, 123, 190, 0.00) 100%), rgba(255, 255, 255, 0.08);
+  -webkit-backdrop-filter: blur(24px);
+  color: white;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 16px */
+  padding: 15px 20px;
+  transition: 0.6s;
+  width: 100%;
+  &:hover{
+    background: linear-gradient(315deg, rgba(51, 158, 190, 0.2) 0%, rgba(51, 123, 190, 0.00) 100%), rgba(255, 255, 255, 0.15);
+
+  }
+}
+
+.input::placeholder{
+  color: var(--48, rgba(255, 255, 255, 0.48));
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 16px */
+}
+
+.input-lable{
+  color: var(--white, #FFF);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 16px */
+  margin-bottom: 10px;
+}

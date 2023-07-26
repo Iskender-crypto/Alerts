@@ -1,0 +1,25 @@
+.title{
+  color: var(--white, #FFF);
+  text-align: center;
+  font-size: 78px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 116px;
+  text-transform: uppercase;
+  padding: 0px 200px;
+  @media screen and (max-width: 992px){
+    padding: 0px 100px;
+  }
+  @media screen and (max-width: 768px){
+    padding: 0px 0px;
+    font-weight: 900;
+    line-height: 76px;
+    font-size: 58px;
+  }
+  @media screen and (max-width: 576px){
+    padding: 0px 0px;
+    font-weight: 900;
+    line-height: 40px;
+    font-size: 32px;
+  }
+}

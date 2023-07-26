@@ -1,0 +1,122 @@
+.slide{
+  overflow: auto;
+  .slide-wrapper{
+    display: flex;
+  }
+  .slide-row{
+    display: flex;
+    margin-left: -20px;
+    @media screen and (max-width: 576px){
+      margin-left: -14px;
+    }
+  }
+  .slide-col{
+    width: 220px !important;
+    height: 160px;
+    padding-left: 20px;
+  @media screen and (max-width: 576px){
+    height: 104px;
+    width: 140px !important;
+    padding-left: 14px;
+  }
+  }
+
+  &::-webkit-scrollbar{
+    display: none;
+  }
+
+  .slide-1{
+    animation: animSlide-1 59s infinite cubic-bezier(1, 0.99, 0,-0.02);
+
+    @media screen and (max-width: 576px){
+      animation: animSlideMediaScreen-1 49s infinite cubic-bezier(1, 0.99, 0,-0.02);
+
+
+    @keyframes animSlideMediaScreen-1 {
+      0%{
+        transform: translate(0,0);
+      }
+      50%{
+        transform: translate(-741px,0);
+      }
+      100%{
+        transform: translate(0,0);
+      }
+    }
+
+    }
+  }
+  .slide-2{
+    animation: animSlide-2 80s infinite cubic-bezier(1, 0.99, 0,-0.02);
+    @media screen and (max-width: 576px){
+      animation: animSlideMediaScreen-2 60s infinite cubic-bezier(1, 0.99, 0,-0.02);
+
+      @keyframes animSlideMediaScreen-2 {
+        0%{
+          transform: translate(0,0);
+        }
+        50%{
+          transform: translate(-1161px,0);
+        }
+        100%{
+          transform: translate(0,0);
+        }
+      }
+
+    }
+  }
+  .slide-3{
+    animation: animSlide-3 100s infinite cubic-bezier(1, 0.99, 0,-0.02);
+    @media screen and (max-width: 576px){
+      animation: animSlideMediaScreen-3 78s infinite cubic-bezier(1, 0.99, 0,-0.02);
+      @keyframes animSlideMediaScreen-3 {
+        0%{
+          transform: translate(0,0);
+        }
+        50%{
+          transform: translate(-743px,0);
+        }
+        100%{
+          transform: translate(0,0);
+        }
+      }
+
+    }
+  }
+
+  @keyframes animSlide-1 {
+    0%{
+      transform: translate(0,0);
+    }
+    50%{
+      transform: translate(-669px,0);
+    }
+    100%{
+      transform: translate(0,0);
+    }
+  }
+  @keyframes animSlide-2 {
+    0%{
+      transform: translate(0,0);
+    }
+    50%{
+      transform: translate(-1323px,0);
+    }
+    100%{
+      transform: translate(0,0);
+    }
+  }
+
+  @keyframes animSlide-3 {
+    0%{
+      transform: translate(0,0);
+    }
+    50%{
+      transform: translate(-665px,0);
+    }
+    100%{
+      transform: translate(0,0);
+    }
+  }
+
+}
