@@ -3,8 +3,8 @@
     <div class="circle-1"></div>
     <div class="circle-2"></div>
   </div>
-  <div class="app">
-    <nav class="flex justify-content-between align-items-center">
+  <div class="app p-0">
+    <nav class="flex justify-content-between align-items-center p-4">
       <h2 class="logo">Uptify</h2>
       <div class="burger-ellipse">
         <div class="burger">
